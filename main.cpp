@@ -1,5 +1,12 @@
 #include <iostream>
+#include "Pet.h"
+#include "Dog.h"
+#include "Bird.h"
 
-int main() {
-  std::cout << "Hello World!\n";
+using namespace std;
+
+int main()
+{
+
+  Dog d1 = Dog();
 }

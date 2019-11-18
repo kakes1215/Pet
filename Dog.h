@@ -12,17 +12,14 @@ public:
 
   void setBreed(std::string newBreed);
   void setIsTrained(bool newValue);
-  void setNeuteredSpayed(bool newValue);
 
   std::string getBreed() const;
   bool getIsTrained() const;
-  bool getNeuteredSpayed() const;
 
   void printDescription() override;
 
 private:
   std::string breed;
   bool isTrained;
-  bool neuterSpayed;
 };
 #endif

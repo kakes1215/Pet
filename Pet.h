@@ -1,6 +1,6 @@
-#include <iostream>
 #ifndef PET_H
 #define PET_H
+#include <iostream>
 
 class Pet
 {

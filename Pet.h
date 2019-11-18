@@ -6,10 +6,8 @@ class Pet
 {
 public:
   Pet();
-  Pet(std::string name, bool isNeuteredSpayed)
-      : name(name), neuterSpayed(isNeuteredSpayed) {}
-  Pet(std::string name, bool isNeuteredSpayed, bool talks)
-      : name(name), neuterSpayed(isNeuteredSpayed), talks(talks) {}
+  Pet(std::string name, bool isNeuteredSpayed);
+  Pet(std::string name, bool isNeuteredSpayed, bool talks);
 
   virtual void printDescription();
 

@@ -18,8 +18,11 @@ bool Dog::getIsTrained() const { return isTrained; }
 
 void Dog::printDescription()
 {
+    cout << endl << "**************************************" << endl;
     cout << "Dog named " << getName() << endl;
-    cout << "Neuter/Spayed: " << getNeuteredSpayed() << endl;
+    cout << "Neuter/Spayed: " << convertBoolToString(getNeuteredSpayed())<< endl;
     cout << "Breed: " << breed << endl;
-    cout << "Dog is Trained: " << isTrained << endl;
+    cout << "Dog is Trained: " << convertBoolToString(isTrained) << endl;
+    cout << "**************************************" << endl;
+
 }

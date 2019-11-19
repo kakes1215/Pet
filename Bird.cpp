@@ -6,7 +6,7 @@ using namespace std;
 Bird::Bird() : Pet(), talks(false), color("No Color Information") {}
 
 Bird::Bird(std::string name, bool talks, std::string color)
-    : Pet(name), talks(talks), color(color) {}
+  : Pet(name), talks(talks), color(color) {}
 
 void Bird::setColor(string newColor) { color = newColor; }
 
@@ -18,7 +18,10 @@ bool Bird::getTalks() const { return talks; }
 
 void Bird::printDescription()
 {
+    cout << endl << "**************************************" << endl;
     cout << "Bird named " << getName() << endl;
-    cout << "Talks: " << talks << endl;
+    cout << "Talks: " << convertBoolToString(talks) << endl;
     cout << "Color: " << color << endl;
+    cout << "**************************************" << endl;
+
 }

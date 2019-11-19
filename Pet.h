@@ -16,6 +16,8 @@ public:
   bool getNeuteredSpayed() const;
 
   virtual void printDescription();
+  
+  std::string convertBoolToString(bool value);
 
 private:
   std::string name;

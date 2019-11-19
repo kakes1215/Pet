@@ -18,8 +18,11 @@ std::string Cat::getMarkings() const { return markings; }
 
 void Cat::printDescription()
 {
+    cout << endl << "**************************************" << endl;
     cout << "Cat named " << getName() << endl;
-    cout << "Neuter/Spayed: " << getNeuteredSpayed() << endl;
-    cout << "Is Inside Cat: " << isInsideCat << endl;
+    cout << "Neuter/Spayed: " << convertBoolToString(getNeuteredSpayed()) << endl;
+    cout << "Is Inside Cat: " << convertBoolToString(insideCat) << endl;
     cout << "Markings: " << markings << endl;
+    cout << "**************************************" << endl;
+
 }
